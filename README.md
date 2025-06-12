@@ -17,7 +17,7 @@ MCP (Model Context Protocol) es un protocolo abierto que permite a aplicaciones 
 Compila y prueba tu servidor MCP localmente. Por ejemplo, si usas .NET:
 
 ```sh
-dotnet run --project C:\RUTA\A\TU\mcp-afl-server.csproj --no-build
+dotnet run --project C:\RUTA\A\TU\mcp-pokemon-server.csproj --no-build
 ```
 
 ### 2. Ubica el archivo de configuración de Cursor
@@ -43,12 +43,12 @@ Dentro del archivo `cursor_config.json`, busca (o crea) la clave `"mcpServers"`.
 ```json
 {
   "mcpServers": {
-    "mcp-afl-server": {
+    "mcp-pokemon-server": {
       "command": "dotnet",
       "args": [
         "run",
         "--project",
-        "C:\\RUTA\\A\\TU\\mcp-afl-server.csproj",
+        "C:\\RUTA\\A\\TU\\mcp-pokemon-server.csproj",
         "--no-build"
       ]
     }
@@ -56,7 +56,7 @@ Dentro del archivo `cursor_config.json`, busca (o crea) la clave `"mcpServers"`.
 }
 ```
 
-- Cambia `"C:\\RUTA\\A\\TU\\mcp-afl-server.csproj"` por la ruta absoluta a tu proyecto.
+- Cambia `"C:\\RUTA\\A\\TU\\mcp-pokemon-server.csproj"` por la ruta absoluta a tu proyecto.
 - Puedes agregar varios servidores MCP si lo deseas, cada uno con una clave diferente.
 
 ### 4. Guarda y reinicia Cursor
